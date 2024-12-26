@@ -4,10 +4,10 @@ import java.util.List;
 
 import model.entities.Seller;
 
-public abstract class SellerDao {
-	abstract void insert(Seller obj);
-	abstract void update(Seller obj);
-	abstract void deleteById(Integer id);
-	abstract Seller findById(Integer id);
-	abstract List<Seller> findAll();
+public interface SellerDao {
+	 void insert(Seller obj);
+	 void update(Seller obj);
+	void deleteById(Integer id);
+	Seller findById(Integer id);
+	 List<Seller> findAll();
 }
