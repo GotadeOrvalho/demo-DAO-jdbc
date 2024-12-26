@@ -1,6 +1,9 @@
 package application;
 
+import java.time.LocalDate;
+
 import model.entities.Department;
+import model.entities.Seller;
 
 public class Program {
 
@@ -8,7 +11,11 @@ public class Program {
 		
 		Department dp = new Department(1, "books");
 		
-		System.out.println(dp.toString());
+		
+		
+		Seller sl = new Seller(21, "bob", "bob@gmail.com",  LocalDate.now(),300.0, dp );
+		
+		System.out.println(sl);
 	}
 
 }
