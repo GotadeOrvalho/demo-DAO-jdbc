@@ -38,6 +38,12 @@ public class Program {
 		Seller newSeller = new Seller(null, "Greg", "greg@gmail.com", new Date(), 4000.0, department);
 		sd.insert(newSeller);
 		System.out.println("inserted! New id = " + newSeller.getId());
+		
+		System.out.println("\n=== TEST 5: Seller update ===");
+		sl = sd.findById(1);
+		sl.setName("Martha Waine");
+		sd.update(sl);
+		System.out.println("Update completed");
 	}
 
 }
